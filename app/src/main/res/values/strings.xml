@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Sporty Club\'s</string>
+
+    <string name="category_template">Sepak bola</string>
+    <string name="fullname_template">FC Barcelona</string>
+
+    <string name="detail">Detail</string>
+    <string name="tambah_data_klub">Tambah data klub</string>
+    <string name="edit_data_klub">Edit data klub</string>
+    <string name="kategori">Kategori</string>
+    <string name="gambar">Link gambar logo(PNG, JPG, JPEG)</string>
+    <string name="simpan">SIMPAN</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="nama_lengkap">Nama lengkap</string>
+    <string name="nama_pendek">Julukan</string>
+    <string name="action_switch_layout">Ubah layout</string>
+    <string name="button_text">%1$s on Google</string>
+    <string name="tambah_data_club">Tambah club baru</string>
+    <string name="julukan_club">%1$s</string>
+    <string name="tentang">Tentang</string>
+    <string name="nama">Nama</string>
+
+    <string name="club_list_label">Sporty Club\'s</string>
+    <string name="detail_club_label">Detail</string>
+    <string name="create_data_label">Tambah data</string>
+    <string name="update_data_label">Update data</string>
+    <string name="edit_label">Edit</string>
+</resources>

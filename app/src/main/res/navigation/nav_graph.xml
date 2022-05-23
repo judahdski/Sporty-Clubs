@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/clubListFragment">
+
+    <fragment
+        android:id="@+id/clubListFragment"
+        android:name="com.d3if0002.sportyclubs.ui.clublist.ClubListFragment"
+        android:label="@string/club_list_label"
+        tools:layout="@layout/fragment_club_list">
+        <action
+            android:id="@+id/action_clubListFragment_to_detailClubFragment"
+            app:destination="@id/detailClubFragment" />
+        <action
+            android:id="@+id/action_clubListFragment_to_createDataFragment"
+            app:destination="@id/createDataFragment" />
+        <action
+            android:id="@+id/action_clubListFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createDataFragment"
+        android:name="com.d3if0002.sportyclubs.ui.createclub.CreateDataFragment"
+        android:label="@string/create_data_label"
+        tools:layout="@layout/fragment_create_data">
+        <action
+            android:id="@+id/action_createDataFragment_to_clubListFragment"
+            app:destination="@id/clubListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailClubFragment"
+        android:name="com.d3if0002.sportyclubs.ui.clubdetail.DetailClubFragment"
+        android:label="@string/detail_club_label"
+        tools:layout="@layout/fragment_detail_club">
+        <argument
+            android:name="club"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.d3if0002.sportyclubs.ui.editclub.EditFragment"
+        android:label="@string/edit_data_klub"
+        tools:layout="@layout/fragment_edit" >
+        <action
+            android:id="@+id/action_editFragment_to_updateDataFragment"
+            app:destination="@id/updateDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateDataFragment"
+        android:name="com.d3if0002.sportyclubs.ui.editclub.UpdateDataFragment"
+        android:label="@string/update_data_label" >
+        <argument
+            android:name="clubId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_updateDataFragment_to_clubListFragment"
+            app:destination="@id/clubListFragment" />
+    </fragment>
+</navigation>

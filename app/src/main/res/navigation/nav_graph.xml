@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_clubListFragment_to_editFragment"
             app:destination="@id/editFragment" />
+        <action
+            android:id="@+id/action_clubListFragment_to_tentangFragment"
+            app:destination="@id/tentangFragment" />
     </fragment>
     <fragment
         android:id="@+id/createDataFragment"
@@ -58,4 +61,9 @@
             android:id="@+id/action_updateDataFragment_to_clubListFragment"
             app:destination="@id/clubListFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/tentangFragment"
+        android:name="com.d3if0002.sportyclubs.ui.tentang.TentangFragment"
+        android:label="Tentang Sport Club's"
+        tools:layout="@layout/fragment_tentang" />
 </navigation>

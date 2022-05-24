@@ -62,6 +62,9 @@ class ClubListFragment : Fragment() {
             }
 
         viewModel.getClubs().observe(viewLifecycleOwner) {
+            if (it.isEmpty())
+                binding.dataNullText.visibility = View.VISIBLE
+
             myAdapter.updateData(it)
         }
 
@@ -104,6 +107,11 @@ class ClubListFragment : Fragment() {
 
                 chooseLayout()
                 setIcon(item)
+                true
+            }
+            R.id.goto_tentang_screen -> {
+                val action = ClubListFragmentDirections.actionClubListFragmentToTentangFragment()
+                findNavController().navigate(action)
                 true
             }
             else -> super.onOptionsItemSelected(item)

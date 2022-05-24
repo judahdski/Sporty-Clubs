@@ -25,4 +25,11 @@
     <string name="create_data_label">Tambah data</string>
     <string name="update_data_label">Update data</string>
     <string name="edit_label">Edit</string>
+
+    <string name="data_null_text">Tambahkan data club terlebih dahulu</string>
+    <string name="tentang_text">Sport Club\'s merupakan aplikasi untuk menulis dan menyimpan informasi tentang klub di dunia olahraga.
+        Pertama-tama, anda cukup menambahkan di halaman Tambah club. Kemudian anda juga bisa mengedit catatan anda yang
+    telah anda buat.</string>
+    <string name="tentang_aplikasi_menu">Tentang aplikasi</string>
+    <string name="edit_club">Edit Club</string>
 </resources>

@@ -5,5 +5,9 @@
     <item android:id="@+id/action_switch_layout"
         android:title="@string/action_switch_layout"
         android:icon="@drawable/ic_linear_layout"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/goto_tentang_screen"
+        android:title="@string/tentang_aplikasi_menu"
+        app:showAsAction="never" />
 </menu>
